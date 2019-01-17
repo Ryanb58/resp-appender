@@ -1,6 +1,9 @@
 This application can be used to help visualize some HTTP traffic between distributed systems.
 
+
 #### Docker Hub URL:
+
+Note: Committing to the `master` branch rebuilds the container & pushed to docker hub.
 
 https://hub.docker.com/r/ryanb58/resp-appender
 
@@ -13,18 +16,22 @@ SERVICE_NAME = test-1-v1
 UPSTREAM_URI = http://time.jsontest.com/
 
 
-#### To build and push to docker:
+#### Build
 
 ```
 make build
-make tag
-make push
 ```
 
-#### To run locally after it has been built:
+#### To run local image after it has been built:
 
 ```
 make run
+```
+
+#### Download and run image from docker hub:
+
+```
+make run-local
 ```
 
 
