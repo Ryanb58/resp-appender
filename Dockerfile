@@ -9,4 +9,4 @@ WORKDIR /code
 RUN pip install -r requirements.txt
 
 EXPOSE ${PORT}
-CMD flask run --port ${PORT}
+CMD python app.py
